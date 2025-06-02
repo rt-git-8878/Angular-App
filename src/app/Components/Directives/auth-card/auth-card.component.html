@@ -1,0 +1,17 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    *ngIf
+                </div>
+                <div class="card-body">
+                    <button (click)="login()"  *ngIf="!isLoggedIn"  class="btn btn-success btn-sm">Login</button>
+                    <button (click)="logout()" *ngIf="isLoggedIn" class="btn btn-success btn-sm">Logout</button>
+                <h3 *ngIf="!isLoggedIn" class="display-5">Welcome to Guest User</h3>
+                <h3 *ngIf="isLoggedIn" class="display-5">Welcome to Naveen</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

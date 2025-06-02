@@ -19,6 +19,9 @@ import { ShowPasswordComponent } from './Components/forms-binding/show-password/
 import { AmountRangeComponent } from './Components/forms-binding/amount-range/amount-range.component';
 import { ThemeComponent } from './Components/forms-binding/theme/theme.component';
 import { RegisterComponent } from './Components/forms-binding/register/register.component';
+import { AuthCardComponent } from './Components/Directives/auth-card/auth-card.component';
+import { HobbySelectComponent } from './Components/Directives/hobby-select/hobby-select.component';
+import { HobbySwitchComponent } from './Components/Directives/hobby-switch/hobby-switch.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,10 @@ import { RegisterComponent } from './Components/forms-binding/register/register.
     ShowPasswordComponent,
     AmountRangeComponent,
     ThemeComponent,
-    RegisterComponent
+    RegisterComponent,
+    AuthCardComponent,
+    HobbySelectComponent,
+    HobbySwitchComponent
   ],
   imports: [
     BrowserModule,

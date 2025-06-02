@@ -1,0 +1,58 @@
+<div class="container mt-3">
+<div class="row">
+    <div class="col">
+        <div class="card">
+             <div class="card-header bg-secondary text-white">
+                <p class="h4">Select Hobby</p>
+             </div>
+             <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                    <form>
+                        <div class="form-check">
+                            <input 
+                            name="eating"
+                            [(ngModel)]="eating"
+                            type="checkbox" class="form-check-input" id="chk1">
+                            <label for="chk1" class="form-check-label">Eating</label>
+                        </div>
+                        <div class="form-check">
+                            <input
+                             name="coding"
+                            [(ngModel)]="coding"
+                            type="checkbox" class="form-check-input" id="chk2">
+                            <label for="chk2" class="form-check-label">Coding</label>
+                        </div>
+                        <div class="form-check">
+                            <input
+                             name="sleeping"
+                            [(ngModel)]="sleeping"
+                            type="checkbox" class="form-check-input" id="chk3">
+                            <label for="chk3" class="form-check-label">Sleeping</label>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="col-md-8">
+                        <div *ngIf="eating" class="card animated jello">
+                            <div class="card-body bg-success text-white">
+                                <p class="h2">Eating</p>
+                            </div>
+                        </div>
+                         <div *ngIf="coding" class="card animated jello">
+                            <div class="card-body bg-danger text-white">
+                                <p class="h2">Eating</p>
+                            </div>
+                        </div>
+                         <div *ngIf="sleeping" class="card animated jello">
+                            <div class="card-body bg-warning text-white">
+                                <p class="h2">Eating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+             </div>
+        </div>
+    </div>
+</div>
+</div>
