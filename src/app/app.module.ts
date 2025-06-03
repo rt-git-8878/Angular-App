@@ -22,6 +22,10 @@ import { RegisterComponent } from './Components/forms-binding/register/register.
 import { AuthCardComponent } from './Components/Directives/auth-card/auth-card.component';
 import { HobbySelectComponent } from './Components/Directives/hobby-select/hobby-select.component';
 import { HobbySwitchComponent } from './Components/Directives/hobby-switch/hobby-switch.component';
+import { EmployeeComponent } from './Components/Directives/employee/employee.component';
+import { PersonListComponent } from './Components/Directives/person-list/person-list.component';
+import { ParentComponent } from './Components/Directives/simple-ParentChild/parent/parent.component';
+import { ChildComponent } from './Components/Directives/simple-ParentChild/child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +46,11 @@ import { HobbySwitchComponent } from './Components/Directives/hobby-switch/hobby
     RegisterComponent,
     AuthCardComponent,
     HobbySelectComponent,
-    HobbySwitchComponent
+    HobbySwitchComponent,
+    EmployeeComponent,
+    PersonListComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
