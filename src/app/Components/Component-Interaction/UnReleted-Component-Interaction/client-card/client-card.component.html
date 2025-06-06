@@ -1,0 +1,24 @@
+
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <p class="h4">Client Card</p>
+                </div>
+                <div class="card-body">
+                    <form (submit)="Submit()">
+                        <div class="form-group">
+                            <input 
+                             name="ClientText"
+                            [(ngModel)]="ClientText"
+                            type="text" class="form-control">
+                        </div>
+                    
+                        <div>
+                            <input type="submit" class="btn btn-success btn-sm" value="Send">
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p class="lead">From Server : {{receiveText}}</p>
+                </div>
+            </div>
+ 

@@ -26,6 +26,12 @@ import { EmployeeComponent } from './Components/Directives/employee/employee.com
 import { PersonListComponent } from './Components/Directives/person-list/person-list.component';
 import { ParentComponent } from './Components/Directives/simple-ParentChild/parent/parent.component';
 import { ChildComponent } from './Components/Directives/simple-ParentChild/child/child.component';
+import { ParentCardComponent } from './Components/Directives/complex-ParantChild/parent-card/parent-card.component';
+import { ChildCardComponent } from './Components/Directives/complex-ParantChild/child-card/child-card.component';
+import { ClientCardComponent } from './Components/Component-Interaction/UnReleted-Component-Interaction/client-card/client-card.component';
+import { ServerCardComponent } from './Components/Component-Interaction/UnReleted-Component-Interaction/server-card/server-card.component';
+import { EmployeeListComponent } from './Components/ServiceComponent/employee-list/employee-list.component';
+import { EmployeeCardComponent } from './Components/ServiceComponent/employee-card/employee-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +56,13 @@ import { ChildComponent } from './Components/Directives/simple-ParentChild/child
     EmployeeComponent,
     PersonListComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ParentCardComponent,
+    ChildCardComponent,
+    ClientCardComponent,
+    ServerCardComponent,
+    EmployeeListComponent,
+    EmployeeCardComponent
   ],
   imports: [
     BrowserModule,
