@@ -32,6 +32,14 @@ import { ClientCardComponent } from './Components/Component-Interaction/UnRelete
 import { ServerCardComponent } from './Components/Component-Interaction/UnReleted-Component-Interaction/server-card/server-card.component';
 import { EmployeeListComponent } from './Components/ServiceComponent/employee-list/employee-list.component';
 import { EmployeeCardComponent } from './Components/ServiceComponent/employee-card/employee-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactAppComponent } from './Components/Contact-Application/contact-app/contact-app.component';
+import { ContactListComponent } from './Components/Contact-Application/contact-list/contact-list.component';
+import { ContactCardComponent } from './Components/Contact-Application/contact-card/contact-card.component';
+import { GithubAppComponent } from './Components/Github-Application/github-app/github-app.component';
+import { GithubProfileComponent } from './Components/Github-Application/github-profile/github-profile.component';
+import { GithubProfileCardComponent } from './Components/Github-Application/github-profile-card/github-profile-card.component';
+import { GithubReposComponent } from './Components/Github-Application/github-repos/github-repos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,12 +70,20 @@ import { EmployeeCardComponent } from './Components/ServiceComponent/employee-ca
     ClientCardComponent,
     ServerCardComponent,
     EmployeeListComponent,
-    EmployeeCardComponent
+    EmployeeCardComponent,
+    ContactAppComponent,
+    ContactListComponent,
+    ContactCardComponent,
+    GithubAppComponent,
+    GithubProfileComponent,
+    GithubProfileCardComponent,
+    GithubReposComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
