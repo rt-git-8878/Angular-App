@@ -40,6 +40,7 @@ import { GithubAppComponent } from './Components/Github-Application/github-app/g
 import { GithubProfileComponent } from './Components/Github-Application/github-profile/github-profile.component';
 import { GithubProfileCardComponent } from './Components/Github-Application/github-profile-card/github-profile-card.component';
 import { GithubReposComponent } from './Components/Github-Application/github-repos/github-repos.component';
+import { GithubProfileDetailsComponent } from './Components/Github-Application/github-profile-details/github-profile-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,7 +78,8 @@ import { GithubReposComponent } from './Components/Github-Application/github-rep
     GithubAppComponent,
     GithubProfileComponent,
     GithubProfileCardComponent,
-    GithubReposComponent
+    GithubReposComponent,
+    GithubProfileDetailsComponent
   ],
   imports: [
     BrowserModule,
