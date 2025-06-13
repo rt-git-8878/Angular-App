@@ -2,12 +2,20 @@
     <div class="row">
         <div class="col">
             <div class="card">
-                <div class="card-header">
-                    <p class="h4">Parent Component:=></p>
+                <div class="card-header bg-success text-white">
+                    <p class="h4">Parent Component</p>
                 </div>
-                <div class="card-body">
-                    <p>From Child: {{text}}</p>
-                    <app-child [msg]="message" (sendData)="text=$event"></app-child>
+                <div class="card-body bg-light">
+                     <form>
+                        <div class="form-group">
+                            <input 
+                            name="text"
+                            [(ngModel)]="Parenttext"
+                            type="text" class="form-control">
+                            <p class="h4">From Child: {{ReciveParentData}} </p>
+                        </div>
+                     </form>
+                    <app-child-card [text]="Parenttext" (SendChildData)="ReciveParentData=$event"></app-child-card>
                 </div>
             </div>
         </div>
