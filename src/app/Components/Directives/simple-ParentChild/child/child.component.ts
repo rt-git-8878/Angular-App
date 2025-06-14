@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ChildComponent implements OnInit {
 
 @Input() msg:string;
-@Output() sendData=new EventEmitter();
+@Output() SendChildData=new EventEmitter();
 public data:string='Hello!! from Child';
   constructor() { }
 
@@ -16,6 +16,6 @@ public data:string='Hello!! from Child';
   }
 public sendTo()
 {
-  this.sendData.emit(this.data);
+  this.SendChildData.emit(this.data);
 }
 }

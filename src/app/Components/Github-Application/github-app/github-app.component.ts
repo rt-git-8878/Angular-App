@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { NgxSpinnerService } from 'ngx-spinner';
 import { IProfile } from 'src/app/Models/IProfile';
 import { IRepository } from 'src/app/Models/IRepository';
 import { GithubService } from 'src/app/services/github.service';
@@ -19,12 +20,14 @@ public githubRepos:IRepository[]=[];
 public submitUser()
 {
   //profile
+ // this.ngxSpinner.show(); // show the spinner
   this.githubService.searchProfile(this.githubUser).subscribe((data)=>{
 this.githubProfile=data;
   });
   //repos
   this.githubService.searchRepos(this.githubUser).subscribe((data)=>{
     this.githubRepos=data;
+    //this.ngxSpinner.hide();  // hide the spinner
   });
 }
 }

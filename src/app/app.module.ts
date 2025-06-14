@@ -41,6 +41,7 @@ import { GithubProfileComponent } from './Components/Github-Application/github-p
 import { GithubProfileCardComponent } from './Components/Github-Application/github-profile-card/github-profile-card.component';
 import { GithubReposComponent } from './Components/Github-Application/github-repos/github-repos.component';
 import { GithubProfileDetailsComponent } from './Components/Github-Application/github-profile-details/github-profile-details.component';
+//import { NgxSpinnerModule } from 'ngx-spinner';
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,7 +86,8 @@ import { GithubProfileDetailsComponent } from './Components/Github-Application/g
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+   // NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

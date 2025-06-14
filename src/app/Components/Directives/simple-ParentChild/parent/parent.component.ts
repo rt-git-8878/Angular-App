@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  public message:string='Good Evening';
-  public text:string;
+  public Parenttext:string;
+  public ReciveParentData:string;
   constructor() { }
 
   ngOnInit(): void {
